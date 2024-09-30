@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"types": ["@types/node", "google.maps"],
+		"noEmit": true,
+		"allowJs": true
+	},
+	"extends": "./tsconfig.json",
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.js",
+		"src/**/*.d.ts",
+		"src/**/*.svelte",
+		"e2e/*",
+		"tests/*",
+		"eslint.config.js"
+	]
+}

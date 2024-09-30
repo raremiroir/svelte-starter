@@ -1,0 +1,35 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"target": "ESNext",
+		"allowImportingTsExtensions": true,
+		"allowJs": true,
+		"strict": true,
+		"sourceMap": true,
+		"noEmit": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noImplicitThis": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"moduleResolution": "Bundler",
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"lib": ["esnext", "dom"],
+		"types": ["vite/client", "@types/node", "google.maps"]
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.js",
+		"src/**/*.d.ts",
+		"src/**/*.svelte",
+		"e2e/*",
+		"tests/*",
+		"src/app.js",
+		"./eslint.config.js"
+	],
+	"exclude": ["node_modules", "public"],
+	"typeRoots": ["./node_modules/@types", "src/lib/types"]
+}

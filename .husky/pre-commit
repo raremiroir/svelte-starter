@@ -1,0 +1,14 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# # Linting
+# npm run ci:eslint
+
+# Lint staged files only
+npx lint-staged
+
+# # PHP Linting
+# composer check
+
+# # Test
+# composer test
